@@ -22,7 +22,7 @@ class Block {
     }
   }
 
-  rotateRight() {
+  void rotateRight() {
     tiles.forEach((tile) {
       var x = tile.x;
       tile.x = rotationTile.x - tile.y + rotationTile.y;
@@ -30,7 +30,7 @@ class Block {
     });
   }
 
-  rotateLeft() {
+  void rotateLeft() {
     tiles.forEach((tile) {
       var x = tile.x;
       tile.x = rotationTile.x + tile.y + rotationTile.y;
