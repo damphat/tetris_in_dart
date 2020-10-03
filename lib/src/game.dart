@@ -74,8 +74,8 @@ class Game {
           boardState[tile.x][tile.y] == 1) {
         return false;
       }
-      return true;
     }
+    return true;
   }
 
   bool pieceMoving(String s) {
@@ -99,7 +99,7 @@ class Game {
       if (s == 'down') currentBlock.move('up');
     }
 
-    ctx.fillStyle == currentBlock.color;
+    ctx.fillStyle = currentBlock.color;
     currentBlock.tiles.forEach((tile) {
       ctx.fillRect(tile.x * cellSize, tile.y * cellSize, cellSize, cellSize);
     });
